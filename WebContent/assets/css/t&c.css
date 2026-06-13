@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: firebrick;
+            padding: 30px 22px;
+            text-align: left;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: firebrick;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        footer {
+            background: #222;
+            color: #eee;
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+        }

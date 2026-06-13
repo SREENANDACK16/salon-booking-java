@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #fffafc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: firebrick;
+            padding: 30px 22px;
+            text-align: left;
+            color: white;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: firebrick;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        

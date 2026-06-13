@@ -1,0 +1,424 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff; /* Changed to white */
+  padding: 20px 20px; /* Increased padding for height */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+  direction: ltr; 
+}
+
+.nav-items {
+  display: flex;
+  gap: 20px;
+  order: 2;
+  
+}
+
+.nav-items a {
+  color: firebrick; /* text color changed to match theme */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-items a:hover,
+.nav-items a:focus {
+  color: red;
+  text-decoration: none;
+}
+.language-switcher {
+    order: 1;
+}
+
+.language-switcher select {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  
+}
+
+/* Hamburger for mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  color:red;
+  width: 28px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 1100;
+ 
+  order: 3;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 3px;
+  background: firebrick;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+.search-section {
+  background: #fff;
+  padding: 20px 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: center;
+  
+}
+
+.search-box {
+	margin-top:200px;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.search-box input[type="text"],
+.search-box select {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1.5px solid firebrick;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-box input[type="text"]:focus,
+.search-box select:focus {
+  border-color: #a12222;
+  outline: none;
+}
+
+.search-box button {
+  background: firebrick;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+.search-box button:hover,
+.search-box button:focus {
+  background: red;
+  outline: none;
+}
+
+
+.top-salons {
+  max-width: 100%;
+  margin: 40px auto 60px auto;
+  padding: 0 75px;
+  text-align: center;
+}
+
+.top-salons h1 {
+  font-size: 2.2rem;
+  color: firebrick;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.salons {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  
+}
+
+.salon-card {
+  min-width: 320px;
+  background: #fff;
+  border: 1.5px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.salon-card:hover,
+.salon-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgb(0 0 0 / 0.12);
+}
+
+.salon-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.salon-name {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 10px 0 5px 0;
+  color: firebrick;
+}
+
+.salon-address,
+.salon-location {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.book-buttons a {
+  display: inline-block;
+  margin-top: 12px;
+  background: firebrick;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.book-buttons a:hover,
+.book-buttons a:focus {
+  background: red;
+  outline: none;
+}
+
+/* Experts Section - UPDATED STYLE */
+.allexperts {
+  max-width: 100%;
+  margin: 0 auto 60px auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.allexperts h1 {
+  font-size: 2rem;
+  color: firebrick;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+
+.experts {
+  display: flex;           
+  flex-wrap: wrap;      
+  gap: 25px 20px;    
+  justify-content: center;  
+}
+
+.expert-card {
+  background: #fafafa;
+  border-radius: 12px;      
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
+  width: 320px;            
+          
+  gap: 20px;
+  padding: 15px 20px;
+  cursor: default;
+  border: 2px solid firebrick;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expert-card:hover,
+.expert-card:focus-within {
+  transform: perspective(600px)
+  rotateX(4deg);
+  box-shadow: 0 18px 40px rgb(0 0 0 / 0.15);
+}
+
+.expert-card img {
+  width: 140px;            
+  height: 140px;           
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid firebrick;
+}
+
+.expert-details {
+  flex: 1;                 
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.expert-name {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #8b0000;
+}
+
+
+
+
+/* Footer */
+.footer {
+  background: firebrick;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 0.9rem;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1 1 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-left p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.footer-center i {
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-center i:hover,
+.footer-center i:focus {
+  color: #fff8f8;
+  outline: none;
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.footer-right a:hover,
+.footer-right a:focus {
+  color: silver;
+  outline: none;
+}
+
+/* Responsive Mobile */
+
+@media (max-width: 768px) {
+
+  .navbar {
+        position: relative;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        background: firebrick;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: auto;
+        border-radius: 0 0 0 8px;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+        padding: 10px 0;
+        z-index: 9999;
+    }
+
+    .nav-items.mobile-active {
+        display: flex;
+    }
+
+    .language-switcher {
+        margin-right: auto;
+    }
+
+    .hamburger {
+        margin-left: auto;
+    }
+  .nav-items a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #a12222;
+    color:white; 
+    text-decoration:none;
+  }
+  .nav-items a:hover,
+  .nav-items a:focus {
+  color: white;
+  background-color:red;
+  text-decoration: none;
+}
+  .nav-items a:last-child {
+    border-bottom: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .search-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Top salons stacked vertically for mobile */
+  .top-salons .salons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Expert cards stacked line by line */
+  .experts {
+    display: grid !important;
+    grid-template-columns: 1fr !important; /* force one column */
+    gap: 20px 0;
+    justify-items: center;
+  }
+
+  /* Inputs and buttons full width */
+  .search-box input[type="text"],
+  .search-box select,
+  .search-box button {
+    width: 100%;
+  }
+
+  /* Footer sections stacked vertically */
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+}
