@@ -29,4 +29,4 @@ A web application for managing salon services, bookings, and administration.
 4. Run the application
 
 ## Screenshots
-(Add images here)
+
