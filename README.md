@@ -29,4 +29,10 @@ A web application for managing salon services, bookings, and administration.
 4. Run the application
 
 ## Screenshots
+1. Admin Module- Admin/screenshots/--
+2. Salon Owner Module- Salon/screenshots/--
+3. User Module- screenshots/---
 
+## Screenshots
+
+#
