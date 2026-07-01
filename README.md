@@ -33,6 +33,3 @@ A web application for managing salon services, bookings, and administration.
 2. Salon Owner Module- Salon/screenshots/--
 3. User Module- screenshots/---
 
-## Screenshots
-
-#
